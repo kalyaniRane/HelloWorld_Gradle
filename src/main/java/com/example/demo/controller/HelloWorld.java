@@ -12,5 +12,10 @@ public class HelloWorld {
     public ResponseEntity hello(){
         return new ResponseEntity("Hello World", HttpStatus.OK);
     }
+    
+    @GetMapping("/user")
+    public ResponseEntity user(){
+        return new ResponseEntity("John Demon", HttpStatus.OK);
+    }	
 
 }
